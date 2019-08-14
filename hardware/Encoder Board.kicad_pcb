@@ -11,13 +11,13 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
+    (0 F.Cu signal hide)
+    (31 B.Cu signal hide)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
     (35 F.Paste user)
-    (36 B.SilkS user)
+    (36 B.SilkS user hide)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 1)
     (trace_clearance 0.2)
     (zone_clearance 0.2032)
@@ -9549,7 +9549,7 @@
     (pad S2 thru_hole circle (at 14.5 5 180) (size 2 2) (drill 1) (layers *.Cu *.Mask)
       (net 26 SW_A))
     (model ${KISYS3DMOD}/Rotary_Encoder.3dshapes/RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz 0 0 0.75))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -9557,6 +9557,11 @@
       (offset (xyz 24 -2.25 11))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
+    )
+    (model Encoder.step
+      (offset (xyz 15.25 -8.5 0.75))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
     )
   )
 
@@ -9609,6 +9614,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D033582)
@@ -9659,6 +9669,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -9711,6 +9726,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D0335B0)
@@ -9761,6 +9781,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -9813,6 +9838,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D0335DE)
@@ -9863,6 +9893,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -9915,6 +9950,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D03360C)
@@ -9965,6 +10005,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10017,6 +10062,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D03363A)
@@ -10067,6 +10117,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10119,6 +10174,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D033668)
@@ -10169,6 +10229,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10221,6 +10286,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D033696)
@@ -10271,6 +10341,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10323,6 +10398,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D0336C4)
@@ -10373,6 +10453,11 @@
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10425,6 +10510,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D0336F2)
@@ -10467,14 +10557,19 @@
     (pad 3 smd rect (at 1 0.65 54) (size 1 0.6) (layers F.Cu F.Paste F.Mask)
       (net 20 "Net-(D17-Pad1)"))
     (model ${KISYS3DMOD}/LED_SMD.3dshapes/LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm.wrl
-      (at (xyz 0 0 0))
+      (offset (xyz -1.35 -1.25 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
     (model ${KIPRJMOD}/WS2812_RGB_LED_updated.stp
       (at (xyz 0 0 0))
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
+    )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -10527,6 +10622,11 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module LED_SMD:LED_SK6805_PLCC4_2.4x2.7mm_P1.3mm (layer F.Cu) (tedit 5AA4B1EE) (tstamp 5D033720)
@@ -10578,11 +10678,15 @@
       (scale (xyz 0.5 0.5 0.5))
       (rotate (xyz 0 0 0))
     )
+    (model LED.step
+      (offset (xyz -1.35 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (gr_circle (center 178.9938 76.89342) (end 195.2498 76.89342) (layer Edge.Cuts) (width 0.1))
 
-  (via (at 185.0644 64.9224) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 3))
   (via (at 180.6702 67.7418) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 179.7264 66.798) (end 180.6702 67.7418) (width 0.25) (layer B.Cu) (net 1))
   (segment (start 178.9684 66.798) (end 179.7264 66.798) (width 0.25) (layer B.Cu) (net 1))
@@ -10657,6 +10761,7 @@
   (segment (start 170.688 89.138015) (end 171.467003 88.359012) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 170.688 89.3572) (end 170.688 89.138015) (width 0.25) (layer F.Cu) (net 2))
   (segment (start 187.2742 64.674223) (end 186.520596 65.427827) (width 0.25) (layer F.Cu) (net 2))
+  (via (at 185.0644 64.9224) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 3))
   (via (at 182.7784 67.7672) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 3))
   (segment (start 184.0484 66.798) (end 183.7476 66.798) (width 0.25) (layer B.Cu) (net 3))
   (segment (start 183.7476 66.798) (end 182.881141 67.664459) (width 1) (layer B.Cu) (net 3))
